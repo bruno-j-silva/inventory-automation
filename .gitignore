@@ -1,0 +1,22 @@
+# Configuration and local secrets
+.env
+.env.*
+!.env.example
+.local/
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+# Frontend
+node_modules/
+dist/
+coverage/
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store

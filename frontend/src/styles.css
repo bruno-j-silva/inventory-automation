@@ -1,0 +1,165 @@
+:root {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #193b36;
+  background: #f5f6f1;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+:focus-visible {
+  outline: 3px solid #ae5100;
+  outline-offset: 4px;
+}
+.shell {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  gap: 24px;
+  border-bottom: 1px solid #d5ddd3;
+}
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 700;
+  text-decoration: none;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  background: #193b36;
+  color: #fff;
+  border-radius: 10px;
+}
+nav {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+}
+nav a {
+  text-underline-offset: 5px;
+}
+.intro {
+  padding: 70px 0 40px;
+}
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #506c56;
+}
+h1 {
+  max-width: 850px;
+  font-size: clamp(34px, 5vw, 58px);
+  letter-spacing: -2px;
+  line-height: 1.13;
+  margin: 20px 0;
+}
+.lead {
+  max-width: 600px;
+  color: #50645b;
+  font-size: 19px;
+  line-height: 1.7;
+}
+h2 {
+  font-size: 22px;
+  margin: 0 0 14px;
+}
+.status-panel {
+  background: #fff;
+  border: 1px solid #d5ddd3;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px;
+}
+.status {
+  margin-bottom: 0;
+  color: #516258;
+}
+.status.ready {
+  color: #166534;
+}
+.status.unavailable {
+  color: #92330e;
+}
+button {
+  background: #193b36;
+  color: white;
+  border: 0;
+  padding: 13px 20px;
+  font: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+.access-panel {
+  padding: 40px 0;
+  max-width: 640px;
+  line-height: 1.7;
+}
+footer {
+  padding: 25px 0;
+  border-top: 1px solid #d5ddd3;
+  color: #50645b;
+  font-size: 13px;
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+  background: white;
+  padding: 12px;
+  z-index: 2;
+}
+@media (max-width: 640px) {
+  .shell {
+    padding: 0 20px;
+  }
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 22px 0;
+    gap: 20px;
+  }
+  .intro {
+    padding-top: 40px;
+  }
+  .status-panel {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 22px;
+  }
+}
