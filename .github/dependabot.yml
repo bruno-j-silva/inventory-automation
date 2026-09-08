@@ -1,6 +1,7 @@
 version: 2
 updates:
-  - package-ecosystem: pip
+  # O backend usa uv como gerenciador e mantém o lockfile backend/uv.lock.
+  - package-ecosystem: uv
     directory: /backend
     schedule:
       interval: monthly
